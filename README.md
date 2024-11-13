@@ -18,7 +18,7 @@ Jazzmine Pools
 
 #### Je startniveau:
 
-blauw
+blauw test
 
 #### Je focus:
 
