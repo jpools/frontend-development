@@ -38,12 +38,12 @@ https://www.bol.com/nl/nl/
 #### Screenshot(s) van de eerste pagina (small screen):
 
 hier de naam van de pagina  
- <img src="./images/sinterklaas.png" width="750px" alt="homepagina van bol.com">
+ <img src="./readme-images/sinterklaas.png" width="750px" alt="homepagina van bol.com">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 
 hier de naam van de pagina  
- <img src="./images/makeup.png" width="750px" alt="make-up pagina van bol.com">
+ <img src="./readme-images/makeup.png" width="750px" alt="make-up pagina van bol.com">
 
 </details>
 
