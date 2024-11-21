@@ -50,7 +50,15 @@ hier de naam van de pagina
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
-  <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
+  <summary>Screenreader Bol.com
+
+Narrator zegt bij iedere link, "link".
+Narrator zegt "asterix" bij bezorging bovenaan.
+Narrator zegt bij categorieeen het aantal maar niet stuks, wat verwarrend kan zijn voor de gebruiker.
+Bij beoordeling zegt de narrator telkens ster of hoger, wat onnodig is.
+Titel van product zit vol met dezelfde woorden dat voor verwarring kan zorgen.
+De beschrijving wordt afgekapt
+<sup>e</sup> werkgroep</summary>
 
 ### Bevindingen
 
