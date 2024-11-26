@@ -33,7 +33,7 @@ surface plane
 
 ### Je opdracht:
 
-https://www.bol.com/nl/nl/
+https://www.bol.com/nl/nl/cmp/sinterklaas/1992/?promo=HEAD_907_Mnav_1_CRS_sint_5
 
 #### Screenshot(s) van de eerste pagina (small screen):
 
@@ -52,13 +52,17 @@ hier de naam van de pagina
 <details>
   <summary>Screenreader Bol.com
 
-Narrator zegt bij iedere link, "link".
+<sup></sup> Narrator zegt bij iedere link, "link".
 Narrator zegt "asterix" bij bezorging bovenaan.
 Narrator zegt bij categorieeen het aantal maar niet stuks, wat verwarrend kan zijn voor de gebruiker.
 Bij beoordeling zegt de narrator telkens ster of hoger, wat onnodig is.
 Titel van product zit vol met dezelfde woorden dat voor verwarring kan zorgen.
-De beschrijving wordt afgekapt
-<sup>e</sup> werkgroep</summary>
+De beschrijving wordt afgekapt Er wordt gebruik gemaakt van H1, H2 etc.
+Ook vindt er alt tekst plaats
+Er worden veel divjes gebruikt in plaats van aparte labels zoals a en buttons.
+De HTML heeft 2 errors en 63 warnings.
+Het kleurcontrast is groot er wordt op deze pagina geel, blauw en wit gebruikt
+Iconen hebben een hoog contrast met de achtergrond</summary>
 
 ### Bevindingen
 
@@ -73,7 +77,8 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 
 ### de hele pagina:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown-1.jpg" width="375px" alt="breakdown van pagina 1">
+  <img src="readme-images/breakdown-2.jpg" width="375px" alt="breakdown van pagina 2">
 
 ### dynamisch deel (bijv menu):
 
