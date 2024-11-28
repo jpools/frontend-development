@@ -33,7 +33,7 @@ surface plane
 
 ### Je opdracht:
 
-https://www.bol.com/nl/nl/cmp/sinterklaas/1992/?promo=HEAD_907_Mnav_1_CRS_sint_5
+https://www.bol.com/nl/nl/cmp/sinterklaas/1992/?promo=HEAD_907_Mnav_1_CRS_sint_5 en 
 
 #### Screenshot(s) van de eerste pagina (small screen):
 

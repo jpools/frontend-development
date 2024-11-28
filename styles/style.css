@@ -1,30 +1,96 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-
-
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+  --color-text: #111;
+  --color-background: #eee;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Verwijzen naar fonts */
 
+@font-face {
+  font-family: "Graphik-Regular-Web";
+  src: url("./fonts/Graphik-Regular-Web.woff2");
+}
 
+@font-face {
+  font-family: "Graphik-SemiBold-Web";
+  src: url("./fonts/Graphik-SemiBold-Web.woff2");
+}
+@font-face {
+  font-family: "Product-bold-web";
+  src: url("./fonts/Produkt-bold-web.woff2");
+}
 
+@font-face {
+  font-family: "Product-light-web";
+  src: url("./fonts/Produkt-light-web.woff2");
+}
 
-body{
-font-family: "Graphik-Regular-Webb."
+/* fonts in de website */
+body {
+  font-family: "Graphik-Regular-Web", Arial, sans-serif;
+}
 
-/* jouw code */
+h1 {
+  font-family: "Graphik-SemiBold-Web", Arial, sans-serif;
+}
 
+strong {
+  font-family: "Produkt-bold-web", Arial, sans-serif;
+}
+
+em {
+  font-family: "Produkt-light-web", Arial, sans-serif;
+}
+
+img {
+  max-width: 20em;
+}
+
+svg {
+  color: #0000a3;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.logo {
+  width: 82px;
+  height: 32px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.zoekbalk {
+  display: flex;
+  background-color: #0000a3;
+}
+
+.zoekbalk p {
+  color: #b4bbd3;
+}
+
+.zoekbalk-iconen {
+  color: white;
+  display: flex;
+  align-items: end;
+}
+
+/* .voorpagina {
+  display: flex;
+} */
+
+/* .leeftijden {
+  display: flex;
+  flex-wrap: nowrap;
+} */

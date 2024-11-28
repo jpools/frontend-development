@@ -7,11 +7,155 @@
 
     <title>Bol.com</title>
 
-    <link href="styles/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <header>
+      <nav>
+        <!-- SVG hamburger -->
+        <ul>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+              focusable="false"
+              aria-hidden="true"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M2 6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1m0 6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1m0 6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </li>
+
+          <!-- HIER MOET LOGO -->
+          <li>
+            <img
+              class="logo"
+              src="./images/bol.com-logo.svg"
+              alt="Logo van Bol.com"
+            />
+          </li>
+
+          <!-- SVG hartje -->
+          <a href="https://www.bol.com/nl/nl/lijstjes/overzicht-lijsten/">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+                focusable="false"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M14.461 2.495a6.5 6.5 0 0 1 8.494 8.494c-.196.472-.514.91-.81 1.264-.305.363-.634.696-.89.953l-8.5 8.498a1 1 0 0 1-1.414 0l-8.498-8.498C1.74 12.103.55 10.354.55 8.5a6.5 6.5 0 0 1 11.097-4.597l.353.353.352-.352a6.5 6.5 0 0 1 2.11-1.41M16.95 4a4.5 4.5 0 0 0-3.182 1.319l-1.06 1.06a1 1 0 0 1-1.414 0l-1.06-1.06A4.5 4.5 0 0 0 2.55 8.5c0 1.065.746 2.33 1.707 3.29l7.791 7.792 7.792-7.791c.255-.255.529-.534.77-.822.249-.298.416-.552.497-.747a4.5 4.5 0 0 0-2.436-5.88A4.5 4.5 0 0 0 16.95 4"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </li>
+          </a>
+
+          <!-- SVG account -->
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+              focusable="false"
+              aria-hidden="true"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M12 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6m3.401 6.665a5 5 0 1 0-6.803 0A9 9 0 0 0 3 18c0 .992.56 1.898 1.447 2.342l.595.297a15.56 15.56 0 0 0 13.916 0l.595-.297A2.62 2.62 0 0 0 21 18a9 9 0 0 0-5.599-8.335M12 11a7 7 0 0 0-7 7c0 .234.132.448.342.553l.594.297a13.56 13.56 0 0 0 12.128 0l.594-.297A.62.62 0 0 0 19 18a7 7 0 0 0-7-7"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </li>
+          <!-- SVG winkelmandje -->
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+              focusable="false"
+              aria-hidden="true"
+            >
+              <g clip-path="url(#a)">
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M0 1a1 1 0 0 1 1-1h4a1 1 0 0 1 .98.804L6.82 5H23a1 1 0 0 1 .982 1.187l-1.601 8.398A3 3 0 0 1 19.39 17H9.69a3 3 0 0 1-2.99-2.414L5.03 6.239l-.017-.084L4.18 2H1a1 1 0 0 1-1-1m7.22 6 1.44 7.195a1 1 0 0 0 1 .805h9.76a1 1 0 0 0 .999-.802L21.79 7zM7 21a2 2 0 1 1 4 0 2 2 0 0 1-4 0m11 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+                  clip-rule="evenodd"
+                ></path>
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="currentColor" d="M0 0h24v24H0z"></path>
+                </clipPath>
+              </defs>
+            </svg>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- SVG microfoon -->
+      <section class="zoekbalk">
+        <p>Waar ben je naar opzoek?</p>
+        <svg
+          class="zoekbalk-iconen"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+          focusable="false"
+          aria-hidden="true"
+        >
+          <path
+            fill="currentColor"
+            fill-rule="evenodd"
+            d="M9.172 1.172A4 4 0 0 1 16 4v8a4 4 0 1 1-8 0V4a4 4 0 0 1 1.172-2.828M12 2a2 2 0 0 0-2 2v8a2 2 0 0 0 4 0V4a2 2 0 0 0-2-2M5 9a1 1 0 0 1 1 1v2a6 6 0 1 0 12 0v-2a1 1 0 1 1 2 0v2a8 8 0 0 1-7 7.937V22h3a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h3v-2.063A8 8 0 0 1 4 12v-2a1 1 0 0 1 1-1"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+
+        <!-- SVG zoeken  -->
+
+        <svg
+          class="zoekbalk-iconen"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+          focusable="false"
+          aria-hidden="true"
+        >
+          <path
+            fill="currentColor"
+            fill-rule="evenodd"
+            d="M10 2a8 8 0 1 0 4.906 14.32l5.387 5.387a1 1 0 0 0 1.414-1.414l-5.387-5.387A8 8 0 0 0 10 2m-6 8a6 6 0 1 1 12 0 6 6 0 0 1-12 0"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </section>
+    </header>
     <main>
-      <section>
+      <section class="voorpagina">
         <h1>Dank u Sinterklaasje</h1>
         <p>De leukste cadeau's</p>
         <img
@@ -20,7 +164,7 @@
         />
       </section>
 
-      <section>
+      <section class="leeftijden">
         <img
           src="./images/grote-speelgoedboek.webp"
           alt="Zittend meisje met bril in pyjama met speelgoedboek in haar hand."
@@ -163,8 +307,8 @@
       <section>
         <h4>Service & contact</h4>
         <!-- <img src="./images/account.svg" alt="account icoontje" /> -->
-         <!-- SVG code -->
-        <svg 
+        <!-- SVG code -->
+        <svg
           version="1.1"
           viewBox="0 0 48 48"
           aria-hidden="true"
@@ -178,7 +322,7 @@
         <p>Volg je bestelling, betaal facturen of retourneer een artikel.</p>
 
         <!-- <img src="./images/chat.svg" alt="Chat icoontje" /> -->
-         <!-- SVG code -->
+        <!-- SVG code -->
         <svg
           version="1.1"
           viewBox="0 0 24 24"
