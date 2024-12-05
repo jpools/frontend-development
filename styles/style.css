@@ -1,3 +1,4 @@
+/* style.css */
 *,
 *::after,
 *::before {
@@ -9,12 +10,7 @@
   --color-background: #eee;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-/* Verwijzen naar fonts */
-
+/* Fonts */
 @font-face {
   font-family: "Graphik-Regular-Web";
   src: url("./fonts/Graphik-Regular-Web.woff2");
@@ -24,23 +20,15 @@ body {
   font-family: "Graphik-SemiBold-Web";
   src: url("./fonts/Graphik-SemiBold-Web.woff2");
 }
+
 @font-face {
-  font-family: "Product-bold-web";
+  font-family: "Produkt-bold-web";
   src: url("./fonts/Produkt-bold-web.woff2");
 }
 
 @font-face {
-  font-family: "Product-light-web";
+  font-family: "Produkt-light-web";
   src: url("./fonts/Produkt-light-web.woff2");
-}
-
-/* fonts in de website */
-body {
-  font-family: "Graphik-Regular-Web", Arial, sans-serif;
-}
-
-h1 {
-  font-family: "Graphik-SemiBold-Web", Arial, sans-serif;
 }
 
 strong {
@@ -51,46 +39,317 @@ em {
   font-family: "Produkt-light-web", Arial, sans-serif;
 }
 
+body {
+  font-family: "Graphik-Regular-Web", Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #ffffff;
+}
+
 img {
-  max-width: 20em;
+  max-width: 100%;
 }
 
-svg {
-  color: #0000a3;
-  width: 1.5em;
+/* Flexbox voor het logo en hamburgermenu */
+.menu-logo {
+  display: flex;
+  align-items: center;
+  gap: 1em; /* Spacing tussen hamburgermenu en logo */
+}
+
+.menu-logo .hamburger {
   height: 1.5em;
+  cursor: pointer;
 }
 
-.logo {
-  width: 82px;
-  height: 32px;
+.menu-logo .logo {
+  height: 2em;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* Plaatst items aan uiteinden */
+  align-items: center;
+  padding: 1em;
 }
 
 nav ul {
   display: flex;
-  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 1.5em;
+  gap: 1em; /* Ruimte tussen iconen */
+}
+
+nav img {
+  height: 1.5em;
+  cursor: pointer;
+}
+
+.logo {
+  height: 2em;
 }
 
 .zoekbalk {
   display: flex;
-  background-color: #0000a3;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0.15em 0.15em;
+  border-radius: 4em;
+  width: 100%;
+  max-width: 1200vw;
+  margin: 0 auto;
 }
 
 .zoekbalk p {
-  color: #b4bbd3;
+  font-family: "Graphik-Regular-Web", Arial, sans-serif;
+  color: #b4b4bb;
+  margin-left: 1em;
+  margin-right: 7em;
+  font-size: 14px;
+  white-space: nowrap;
 }
 
-.zoekbalk-iconen {
-  color: white;
-  display: flex;
-  align-items: end;
+.zoekbalk img {
+  height: 1.5em;
+  /* margin-left: 0.5em; */
+  cursor: pointer;
 }
 
-/* .voorpagina {
+.zoekbalk img:last-child {
+  margin-right: 1.5em;
+}
+
+.achtergrond-zoekbalk {
+  background-color: #0000a3;
+  padding: 1em;
+}
+
+.voorpagina h1 {
+  font-family: "Produkt-bold-web";
+  font-size: 2em;
+  background-color: #ffee88;
+  color: #0000a3;
+  padding: 0.5em;
+  margin: 0;
+}
+
+h1 span {
+  font-family: "Produkt-light-web", Arial, sans-serif;
+  font-weight: 200;
+}
+
+.voorpagina {
+  margin-top: 1.5em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-bottom: 2em;
+}
+
+/* Carousel Styles */
+.leeftijden {
+  position: relative;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+.leeftijden ul {
   display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.leeftijden ul::-webkit-scrollbar {
+  display: none;
+}
+
+.leeftijden li {
+  flex: 0 0 calc(40vw - 1rem);
+  scroll-snap-align: start;
+  min-width: 0;
+  text-align: center;
+}
+
+.leeftijden img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+.leeftijden h3 {
+  font-weight: bold;
+  font-size: 0.875em;
+  margin-top: 0.5rem;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.carousel-overlay.left {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.carousel-overlay.right {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+
+.carousel-overlay.visible {
+  opacity: 1;
+}
+
+/* .carousel-button img {
+  width: 24px;
+  height: 24px;
+  display: block;
 } */
 
-/* .leeftijden {
+/* .carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
   display: flex;
-  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, background-color 0.3s ease;
 } */
+
+.carousel-button.prev {
+  left: 0.5rem;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.carousel-button.next {
+  right: 0.5rem;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.carousel-button.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.carousel-button:hover {
+  background-color: #f8f8f8;
+}
+
+.products-carousel {
+  position: relative;
+  overflow: hidden;
+  padding: 0 1rem;
+  margin: 2rem 0;
+}
+
+.products-carousel ul {
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.products-carousel ul::-webkit-scrollbar {
+  display: none;
+}
+
+.products-carousel li {
+  flex: 0 0 calc(60vw - 1rem);
+  scroll-snap-align: start;
+  min-width: 0;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.products-carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.products-carousel h3 {
+  font-size: 0.875rem;
+  margin: 0.5rem 0;
+  line-height: 1.4;
+}
+
+.products-carousel .price {
+  font-family: "Produkt-bold-web";
+  font-size: 1rem;
+  font-weight: bold;
+  color: red;
+  margin: 0.5rem 0;
+}
+
+.products-carousel .original-price {
+  color: #666;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Produkt-bold-web";
+  font-size: 1.125em;
+  padding-left: 1em;
+}
+
+p {
+  padding-left: 1em;
+}
+
+.fotos img {
+  /* width: 26.17em;
+  height: 19.63em; */
+  width: 366.4px;
+  height: 274.8px;
+  padding: 0px 12px;
+}
+
+.fotos p {
+  color: #666;
+}
+
+.thuiswinkel {
+  width: 2.25em;
+  height: 2.25em;
+}
