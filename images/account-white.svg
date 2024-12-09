@@ -2,13 +2,13 @@
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
-              fill="#0000a3"
+              fill="#FFFFFF"
               viewBox="0 0 24 24"
               focusable="false"
               aria-hidden="true"
             >
               <path
-                fill="#0000a3"
+                fill="#FFFFFF"
                 fill-rule="evenodd"
                 d="M12 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6m3.401 6.665a5 5 0 1 0-6.803 0A9 9 0 0 0 3 18c0 .992.56 1.898 1.447 2.342l.595.297a15.56 15.56 0 0 0 13.916 0l.595-.297A2.62 2.62 0 0 0 21 18a9 9 0 0 0-5.599-8.335M12 11a7 7 0 0 0-7 7c0 .234.132.448.342.553l.594.297a13.56 13.56 0 0 0 12.128 0l.594-.297A.62.62 0 0 0 19 18a7 7 0 0 0-7-7"
                 clip-rule="evenodd"

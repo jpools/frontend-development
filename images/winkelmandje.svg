@@ -2,14 +2,14 @@
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
-              fill="none"
+              fill="#0000a3"
               viewBox="0 0 24 24"
               focusable="false"
               aria-hidden="true"
             >
               <g clip-path="url(#a)">
                 <path
-                  fill="currentColor"
+                  fill="#0000a3"
                   fill-rule="evenodd"
                   d="M0 1a1 1 0 0 1 1-1h4a1 1 0 0 1 .98.804L6.82 5H23a1 1 0 0 1 .982 1.187l-1.601 8.398A3 3 0 0 1 19.39 17H9.69a3 3 0 0 1-2.99-2.414L5.03 6.239l-.017-.084L4.18 2H1a1 1 0 0 1-1-1m7.22 6 1.44 7.195a1 1 0 0 0 1 .805h9.76a1 1 0 0 0 .999-.802L21.79 7zM7 21a2 2 0 1 1 4 0 2 2 0 0 1-4 0m11 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
                   clip-rule="evenodd"
@@ -17,7 +17,7 @@
               </g>
               <defs>
                 <clipPath id="a">
-                  <path fill="currentColor" d="M0 0h24v24H0z"></path>
+                  <path fill="#0000a3" d="M0 0h24v24H0z"></path>
                 </clipPath>
               </defs>
             </svg>

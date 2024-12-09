@@ -220,30 +220,6 @@ h1 span {
   opacity: 1;
 }
 
-/* .carousel-button img {
-  width: 24px;
-  height: 24px;
-  display: block;
-} */
-
-/* .carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: white;
-  border: none;
-  border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: opacity 0.3s ease, background-color 0.3s ease;
-} */
-
 .carousel-button.prev {
   left: 0.5rem;
   opacity: 0;
@@ -331,25 +307,52 @@ h2 {
   font-family: "Produkt-bold-web";
   font-size: 1.125em;
   padding-left: 1em;
+  padding-bottom: 0.1em;
 }
 
-p {
+p,
+h4 {
   padding-left: 1em;
+  padding-right: 1em;
 }
 
 .fotos img {
-  /* width: 26.17em;
-  height: 19.63em; */
-  width: 366.4px;
-  height: 274.8px;
-  padding: 0px 12px;
+  border-radius: 15px;
+  margin-top: 1.5em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
 }
 
 .fotos p {
   color: #666;
 }
 
+.klantenservice {
+  background-color: #0000a3;
+  padding: 1em;
+}
+
+.klantenservice p, h2, h3{
+  color: #ffffff;
+}
+
+.klantensevice h3 {
+  font-family: grap;
+  font-size: 0.875em;
+}
+
 .thuiswinkel {
   width: 2.25em;
   height: 2.25em;
+}
+
+.footerlogo {
+  align-items: center;
+  width: 300px;
+  height: 150px;
+}
+
+footer img[src*="account-footer"] {
+  height: 1.5em; /* or whatever size you want */
+  width: auto;
 }
