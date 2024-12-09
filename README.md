@@ -57,12 +57,19 @@ Narrator zegt "asterix" bij bezorging bovenaan.
 Narrator zegt bij categorieeen het aantal maar niet stuks, wat verwarrend kan zijn voor de gebruiker.
 Bij beoordeling zegt de narrator telkens ster of hoger, wat onnodig is.
 Titel van product zit vol met dezelfde woorden dat voor verwarring kan zorgen.
-De beschrijving wordt afgekapt Er wordt gebruik gemaakt van H1, H2 etc.
+De beschrijving wordt afgekapt 
+Er wordt gebruik gemaakt van H1, H2 etc.
 Ook vindt er alt tekst plaats
 Er worden veel divjes gebruikt in plaats van aparte labels zoals a en buttons.
 De HTML heeft 2 errors en 63 warnings.
 Het kleurcontrast is groot er wordt op deze pagina geel, blauw en wit gebruikt
-Iconen hebben een hoog contrast met de achtergrond</summary>
+Iconen hebben een hoog contrast met de achtergrond.
+Bol.com gebruikt hele lange titels waardoor het voor iemand met een screenreader onduidelijk kan worden. 
+Bol.com maak gebruik van een logische opmaak bijvoorbeeld titels eerst, daarna foto met beschrijving. 
+De navigatie heeft een spraakfunctie wat goed is voor iemand die blind of slechtziend is. 
+
+
+</summary>
 
 ### Bevindingen
 
@@ -98,16 +105,15 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 
 ### Stand van zaken
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-</details>
+De basis HTML ging goed en had ik onder de knie. Ik had deze week niet heel veel aan FED kunnen doen waardoor ik helaas een achterstand ben opgelopen. 
+</details
 
 ## Voortgang 2 (week 3)
 
 <details>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
-### Stand van zaken
+Ik vond het lastig om de SVG's op de juiste manier te implementeren op mijn website. Ik had eerst de SVG code zelf in mijn HTML gezet, waardoor dat rommelig werd. De studentassistent had mij een tip laten zien hoe ik dit op een makkelijkere manier kon doen. Ik moet alle SVG codes omzetten naar een tekstbestand en deze opslaan als SVG. Als ik dit gelijk wist had ik veel tijd kunnen besparen. 
 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
@@ -125,10 +131,8 @@ samen met je groepje opstellen
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Als er veel elementen zijn op de website die hetzelfde zijn hoef je ze niet allemaal te maken 
+
 
 </details>
 

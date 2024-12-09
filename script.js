@@ -1,3 +1,7 @@
+
+// MET BEHULP VAN AI ""Help mij met het maken van een carousel met de volgende code..."//
+
+
 // Get both carousels
 const leeftijdenCarousel = document.querySelector('.leeftijden ul');
 const productsCarousel = document.querySelector('.products-carousel ul');

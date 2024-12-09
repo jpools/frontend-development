@@ -56,7 +56,7 @@ img {
 .menu-logo {
   display: flex;
   align-items: center;
-  gap: 1em; /* Spacing tussen hamburgermenu en logo */
+  gap: 1em; 
 }
 
 .menu-logo .hamburger {
@@ -71,7 +71,7 @@ img {
 
 nav {
   display: flex;
-  justify-content: space-between; /* Plaatst items aan uiteinden */
+  justify-content: space-between; 
   align-items: center;
   padding: 1em;
 }
@@ -82,7 +82,7 @@ nav ul {
   margin: 0;
   padding: 0;
   padding-right: 1.5em;
-  gap: 1em; /* Ruimte tussen iconen */
+  gap: 1em; 
 }
 
 nav img {
@@ -116,7 +116,6 @@ nav img {
 
 .zoekbalk img {
   height: 1.5em;
-  /* margin-left: 0.5em; */
   cursor: pointer;
 }
 
@@ -154,12 +153,12 @@ h1 span {
 .leeftijden {
   position: relative;
   overflow: hidden;
-  padding: 0 1rem;
+  padding: 0 1em;
 }
 
 .leeftijden ul {
   display: flex;
-  gap: 1rem;
+  gap: 1em;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -176,7 +175,7 @@ h1 span {
 }
 
 .leeftijden li {
-  flex: 0 0 calc(40vw - 1rem);
+  flex: 0 0 calc(40vw - 1em);
   scroll-snap-align: start;
   min-width: 0;
   text-align: center;
@@ -192,14 +191,14 @@ h1 span {
 .leeftijden h3 {
   font-weight: bold;
   font-size: 0.875em;
-  margin-top: 0.5rem;
+  margin-top: 0.5em;
 }
 
 .carousel-overlay {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 4rem;
+  width: 4em;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -221,13 +220,13 @@ h1 span {
 }
 
 .carousel-button.prev {
-  left: 0.5rem;
+  left: 0.5em;
   opacity: 0;
   pointer-events: none;
 }
 
 .carousel-button.next {
-  right: 0.5rem;
+  right: 0.5em;
   opacity: 0;
   pointer-events: none;
 }
@@ -244,13 +243,13 @@ h1 span {
 .products-carousel {
   position: relative;
   overflow: hidden;
-  padding: 0 1rem;
-  margin: 2rem 0;
+  padding: 0 1em;
+  margin: 2em 0;
 }
 
 .products-carousel ul {
   display: flex;
-  gap: 1rem;
+  gap: 1em;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -267,11 +266,11 @@ h1 span {
 }
 
 .products-carousel li {
-  flex: 0 0 calc(60vw - 1rem);
+  flex: 0 0 calc(60vw - 1em);
   scroll-snap-align: start;
   min-width: 0;
   background: white;
-  padding: 1rem;
+  padding: 1em;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -280,26 +279,27 @@ h1 span {
   width: 100%;
   height: auto;
   border-radius: 4px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5em;
 }
 
 .products-carousel h3 {
-  font-size: 0.875rem;
-  margin: 0.5rem 0;
+  font-size: 0.875em;
+  margin: 0.5em 0;
   line-height: 1.4;
 }
 
 .products-carousel .price {
   font-family: "Produkt-bold-web";
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: bold;
   color: red;
-  margin: 0.5rem 0;
+  margin: 0.5em 0;
+  padding-left: 0.5em;
 }
 
 .products-carousel .original-price {
   color: #666;
-  font-size: 0.875rem;
+  font-size: 0.875em;
   margin: 0;
 }
 
@@ -307,13 +307,16 @@ h2 {
   font-family: "Produkt-bold-web";
   font-size: 1.125em;
   padding-left: 1em;
-  padding-bottom: 0.1em;
+
 }
 
-p,
 h4 {
   padding-left: 1em;
   padding-right: 1em;
+}
+
+p {
+  padding-left: 1.25em;
 }
 
 .fotos img {
@@ -329,16 +332,56 @@ h4 {
 
 .klantenservice {
   background-color: #0000a3;
+  color: white;
   padding: 1em;
 }
 
-.klantenservice p, h2, h3{
-  color: #ffffff;
+.klantenservice h2 {
+  font-family: "Produkt-bold-web", Arial, sans-serif;
+  font-size: 1.125em;
+  padding-left: 0.25em;
+  padding-bottom: 0.5em;
 }
 
-.klantensevice h3 {
-  font-family: grap;
+.klantenservice article {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+
+.klantenservice article:last-child {
+  margin-bottom: 0;
+}
+
+.klantenservice img {
+  margin-right: 1em;
+  margin-left: 1em;
+  width: 40px;
+  height: 40px;
+}
+
+.klantenservice h3 {
+  font-family: "Graphik-Regular-Web", Arial, sans-serif;
   font-size: 0.875em;
+  margin: 0 0 0.25em 0;
+}
+
+.klantenservice p {
+  font-family: "Graphik-Regular-Web", Arial, sans-serif;
+  font-size: 0.875em;
+  margin-bottom: 0.5em;
+  padding-left: 0.15em;
+}
+
+.sociale-media {
+  display: flex;
+  gap: 1.5em;
+}
+
+.sociale-media h4 {
+  font-size: 0.875em;
+  font-weight: bold;
 }
 
 .thuiswinkel {
@@ -346,13 +389,111 @@ h4 {
   height: 2.25em;
 }
 
-.footerlogo {
-  align-items: center;
-  width: 300px;
-  height: 150px;
+.thuiswinkel-item {
+  display: flex;
 }
 
-footer img[src*="account-footer"] {
-  height: 1.5em; /* or whatever size you want */
+.voorwaarden a {
+  display: inline-block;
+}
+
+footer a {
+  display: block;
+  font-size: 0.75em;
+}
+
+/* tekst en iconen centreren en ruimte geven */
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.25em;
+}
+
+/* lijntjes onder tekst en button */
+.link a {
+  flex-grow: 1;
+  text-decoration: none;
+  font-family: "Graphik-Regular-Web", Arial, sans-serif;
+  color: #000;
+  padding-top: 0.5em;
+  padding-left: 1em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1em;
+}
+
+.link img {
+  width: 1.5em;
+  height: auto;
+  margin-right: 2em;
+}
+
+/* lijntje onder border bottom */
+.meld-je-aan {
+  border-bottom: 1px solid #ddd;
+}
+
+.footer-midden {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-midden img {
+  margin: 1em 0;
+}
+footer a {
+  display: inline-block;
+  margin: 0.5em;
+}
+
+footer p {
+  margin-top: 1em;
+  font-size: 0.75em;
+}
+
+footer img {
   width: auto;
+}
+
+/* CSS voor de tweede pagina */
+
+.categorieen {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style-type: none;
+}
+
+.categorieen li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  width: 45%;
+  box-sizing: border-box; 
+  padding: 0.5em; 
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 5px; 
+}
+
+.voorpagina-2 h2 {
+  font-family: "Produkt-bold-web";
+  font-size: 2em;
+  background-color: #F09FC6;
+  color: #0000a3;
+  padding: 0.5em;
+  margin: 0;
+}
+
+
+.voorpagina-2 {
+  margin-top: 1.5em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-bottom: 2em;
 }
